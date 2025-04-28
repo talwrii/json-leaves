@@ -17,6 +17,9 @@ Those who are incapable of using the command-line and used to spending their liv
 
 # Installation
 You can install `json-leaves` using [pipx](https://github.com/pypa/pipx):
+```
+pipx install json-leaves
+```
 
 # Usage
 This fetches data related to the pip installations of the kitty-plotnine package and then unpacks all leaves and values.
@@ -34,3 +37,14 @@ curl https://pypistats.org/api/packages/kitty-plotnine/python_major | json-leave
 ```
 
 You can also output JSON data with `--json` and include nodes as well as leaves with `--nodes`
+
+
+## About me
+I am **@readwithai**. I create tools for reading, research and agency sometimes using the markdown editor [Obsidian](https://readwithai.substack.com/p/what-exactly-is-obsidian).
+
+I also create a [stream of tools](https://readwithai.substack.com/p/my-productivity-tools) that are related to carrying out my work.
+
+I write about lots of things - including tools like this - on [X](https://x.com/readwithai).
+My [blog](https://readwithai.substack.com/) is more about reading and research and agency.
+
+![@readwithai logo](./logo.png)
