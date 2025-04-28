@@ -3,7 +3,7 @@ import distutils.core
 
 setuptools.setup(
     name='json-leaves',
-    version="1.1.0",
+    version="1.2.0",
     author='@readwithai',
     long_description_content_type='text/markdown',
     author_email='talwrii@gmail.com',
