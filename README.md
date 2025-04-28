@@ -6,8 +6,12 @@ Turn a JSON object into path-value pairs suitable for grepping.
 
 JSON is quite nice but digging through JSON can be a pain - as can building queries to fetch the values you have found. `json-leaves` allows you to use grep and other command-line tools to find what you want and then gives you a selector (suitable for use in other tools like `python` or `jq` so that you can programmatically do the same thing).
 
+**NB: This tool is near identical to the established tool [gron](https://github.com/tomnomnom/gron) - "Grep JSON" written in Go. This tool was written without knowledge of gron's existence**
+
 ## Alternatives and prior work
 I could not quickly find a command-line tool to the same thing. I found a [recipe  for jq](https://github.com/jqlang/jq/issues/78) but this sufficiently unwieldy that I do not want to use it - though it could be placed in a script that you place on your path. I wanted to make something reusable on any machine.
+
+After writing and sharing this tool, I discovered that [gron](https://github.com/tomnomnom/gron) which is highly-starred and performs near identical functionality. The additional flags for `json-leaves` may be of value, such as displaying just paths, just strings, unquoted and nodes as well as leaves. `gron` has an `ungron` feature to convert from value-path pairs back to values - which seems like a very nice idea since it allows modification to happen the flat path-value form before recreating a JSON file. The plethora of flags in `json-leaves` might make adding this to this tool confusing.
 
 More generally, any use of this tools likely wants to be aware of the `jq` tool which provides a DSL to perform many JSON operations from the command-line.
 
