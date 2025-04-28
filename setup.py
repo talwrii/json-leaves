@@ -10,7 +10,7 @@ setuptools.setup(
     description='Extract the leaves from a JSON file and show the paths to said leaves',
     license='MIT',
     keywords='JSON,leaves,cli',
-    url='',
+    url='https://github.com/talwrii/json-leaves',
     packages=["json_leaves"],
     long_description=open('README.md').read(),
     entry_points={
